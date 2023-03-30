@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        .header {
+            height: 145px;
+            box-sizing: border-box;
+            min-width: 1000px;
+            max-width: 1500px;
+        }
+        
+        .header_logo {
+            float: left;
+        }
+
+        .header .header_logo h1 {
+            padding-top: 79px;
+            margin-left: 350px;
+            letter-spacing: 2px;
+            display: inline-flex;
+            align-items:center;
+            height: 30px;
+        }
+        .header_gnb{
+            float: right;
+        }
+
+        .header_gnb ul {
+            margin-top: 39px;
+            float: left;
+        }
+
+        .header_gnb ul li {
+            display: inline-block;
+        }
+
+        .header_gnb ul li a{
+            display: block;
+            font: bold 20px 'arial';
+            color:black;
+            margin: 40px -30px;
+            letter-spacing: 1px;
+        }
+
+        .header_gnb .aaa_item+.aaa_item {
+            margin-left: 120px;
+        }
+
+        .smc-main.smc-main-renew .header-utility {
+            width: auto;
+            top: -105px;
+            right: 87px;
+        }
+
+        .header-utility * {
+            vertical-align: middle;
+        }
+
+        .header-utility {
+            margin-top: 8px;
+            height:50px;
+            margin-left: 340px;
+            z-index: 103;
+            position: absolute;
+        }
+
+        body .header-hospital-intro-title {
+            background-position: 0 6px;
+            font-size: 13px;
+            line-height: 19px;
+            color: #999;
+        }
+
+        .header-hospital-intro-title {
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            padding-left: 16px;
+            letter-spacing: -1px;
+            background: url(http://www.samsunghospital.com/_newhome/ui/home/static/img/gnb/bul_dot_gray_60.png) 0 50% no-repeat;
+        }
+
+        body .header-search .button-header-search {
+            margin-top: -40px;
+            margin-left: 100px;
+            padding: 5px 16px 5px 16px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .header-search .button-header-search {
+            margin-top: 1px;
+            min-width: 30px;
+            height: 30px;
+            line-height: 100%;
+            border-width: 1px 1px 1px 0;
+            border-style: solid;
+            border-color: transparent;
+        }
+
+        body .header-search .button-header-search .icon-search {
+            margin-right: 0;
+            background: url(http://www.samsunghospital.com/_newhome/ui/home/static/img/renew_main/btn_srch_renewmain.png) no-repeat 0 0;
+            cursor: pointer;
+        }
+
+        .header-search .button-header-search .icon-search {
+            width: 21px;
+            height: 21px;
+        }
+
+        .iconset {
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .visually-hidden{
+            position: absolute ;
+            width: 1px ;
+            height: 1px ;
+            padding: 0 ;
+            margin: -1px ;
+            overflow: hidden ;
+            clip: rect(0,0,0,0) ;
+            border: 0 ;
+        }
+
+
+        body .wrapper_member_login, body .wrapper_member_login li, body .wrapper_member_login li a {
+            float: left;
+            font-size: 13px;
+            color: #999;
+            vertical-align: top;
+            line-height: 15px;
+        }
+
+        body .wrapper_member_login {
+            margin-top: -84px;
+            margin-left: 150px;
+        }
+
+
+
+        body .wrapper_member_login li a {
+            padding: 7px 50px 7px 50px;
+        }
+
+
+        .slideshow-container {
+          position: relative;
+          margin: auto;
+        }
+    
+        .mySlides {
+          display: none;
+        }
+    
+        .prev, .next {
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -53px;
+          margin-left: 120px;
+          margin-right: 120px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 60px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+    
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+    
+        .prev:hover, .next:hover {
+            cursor: pointer;
+            background-color: black;
+        }
+    
+        .mySlides img {
+          display: block;
+          width: 100%;
+          height: 500px;
+        }
+
+        .doc_search {
+            background: url(http://www.samsunghospital.com/_newhome/ui/home/static/img/renew_main/bg_srch_docdept2022.jpg) no-repeat 0 0;
+            background-position: center;
+            box-sizing: border-box;
+            height: 108px;
+        }
+
+        .doc_search .doc_gnb{
+            padding: 34px 32px 0 400px;
+        }
+        .doc_search .doc_gnb .title_doc_gnb {
+            float: left;
+            width: 650px;
+            margin-top: 6px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fef4a0;
+        }
+
+        .doc_search .doc_gnb .title_doc_gnb span {
+            display: inline-block;
+            padding-left: 16px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body class="smc-main.smc-main-renew">
+    <header class="header">
+        <div class="header_logo">
+            <h1>
+                <img src="img/LEGEND.png" alt="hospital" style="height: 100px;"> 
+                <a href="index.html">
+                    <span>서울레전드병원</span>
+                </a>
+            </h1>
+        </div>
+        <div class="header_gnb">
+            <ul>
+                <li class="aaa_item"><a href="#">진료예약</a></li>
+                <li class="aaa_item"><a href="#">건강정보</a></li>
+                <li class="aaa_item"><a href="#">진료차트</a></li>
+                <li class="aaa_item"><a href="#">나눔소통</a></li>
+                <li class="aaa_item"><a href="#">병원안내</a></li>
+            </ul>
+
+            <div class="header-utility">
+                    <div class="header-outlink">
+                        <div class="header-hospital-intro">
+                            <a href="#" class="header-hospital-intro-title">병원소개</a>
+                        </div>
+                    </div>
+
+                    <form class="header-search">
+                        <button type="button" class="button button-header-search" role="button">
+                            <i class="iconset icon-search" aria-hidden="true"></i>
+                            <span class="visually-hidden">검색</span>
+                        </button>
+                    </form>
+
+                    <ul class="wrapper_member_login">
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="member.html">회원가입</a></li>        
+                    </ul>
+            </div>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="img/hos1.jpg" alt="Slide 1">
+        </div>
+    
+        <div class="mySlides">
+          <img src="img/hos2.jpg" alt="Slide 2">
+        </div>
+
+        <div class="mySlides">
+            <img src="img/hos3.jpg" alt="Slide 1">
+          </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="reservation">
+        <section class="doc_search"> 
+            <form class="main_doc">
+                <div class="doc_gnb">
+                    <h3 class="title_doc_gnb">의료진/진료과 검색 <span>서울레전드병원의 전문의료진을 검색해 보세요.</span></h3>
+                </div>
+            </form>
+        </section>
+      </div>
+
+
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+</body>
+</html>
